@@ -12,6 +12,16 @@
     <header class="shadow-lg pt-4 pb-6 sticky top-0 left-0">
         <div class="flex flex-row gap-2 items-center container max-w-[1440px] justify-between">
             <div><img src="/public/images/logo-light.svg" alt="wah.su" /></div>
+            <div>
+                <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
+                    <div class="bg-green-500 w-4 h-4 rounded-full hidden" id="status-up-icon"></div>
+                    <div class="bg-yellow-400  w-4 h-4 rounded-full hidden" id="status-degraded-icon"></div>
+                    <div class="bg-red-600 w-4 h-4 rounded-full hidden" id="status-down-icon"></div>
+                    <p class="hidden" id="status-up-text">All Systems Operational.</p>
+                    <p class="hidden" id="status-degraded-text">Degraded Services.</p>
+                    <p class="hidden" id="status-down-text">All Systems Down.</p>
+                </a>
+            </div>
             <div class="flex flex-row items-center justify-center">
                 <button type="button"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -34,7 +44,7 @@
             to the right place! wah.su is all about providing a safe and stable
             environment for your projects.
 
-            Run by yours truly, @radiquum, we believe in quality over quantity, which is why access is currently invite-only.
+            Run by yours truly, <a href="https://bento.me/radiquum" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">@radiquum</a>, we believe in quality over quantity, which is why access is currently invite-only.
             Interested in joining the pack? Reach out to me to sniff out an invitation.
         </p>
         <!--noformat-->
@@ -48,6 +58,7 @@
 
     <script src="/public/js/flowbite.min.js"></script>
     <script src="/public/js/cards.js"></script>
+    <script src="/public/js/status.js"></script>
 </body>
 
 </html>
