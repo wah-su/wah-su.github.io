@@ -14,7 +14,6 @@ const setTheme = (theme) => {
 
 function updateTheme() {
   let theme = localStorage.getItem("theme");
-  console.log("updatingTheme", theme);
   if (theme) {
     setTheme(theme);
   } else {

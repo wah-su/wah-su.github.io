@@ -32,7 +32,7 @@ const cards = [
 const services = document.getElementById("services");
 
 function renderCards() {
-  const theme = document.getElementById("body").classList[0];
+  const theme = localStorage.getItem("theme");
   services.innerHTML = "";
   for (let index = 0; index < cards.length; index++) {
     const image_name = cards[index].image.split(".")[0];

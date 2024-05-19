@@ -2014,6 +2014,36 @@ input:checked + .toggle-bg {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.dark\:bg-green-300:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 225 188 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-green-400:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 196 141 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-red-500:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-yellow-200:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 233 106 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-red-400:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 128 128 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-slate-900:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .dark\:text-blue-500:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -2032,6 +2062,36 @@ input:checked + .toggle-bg {
 .dark\:text-gray-300:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-50:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-100:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-300:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-200:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-500:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.dark\:text-slate-400:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
 .dark\:hover\:bg-blue-700:hover:where(.dark, .dark *) {

@@ -8,18 +8,19 @@
     <link href="/public/output.css" rel="stylesheet" />
 </head>
 
-<body class="light" id="body">
+<body class="light dark:bg-slate-900" id="body">
     <header class="shadow-lg pt-4 pb-6 sticky top-0 left-0 bg-slate-50 dark:bg-slate-800">
         <div class="flex flex-row gap-2 items-center container max-w-[1440px] justify-between px-4">
             <div><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
             <div>
                 <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
-                    <div class="bg-green-500 w-4 h-4 rounded-full hidden" id="status-up-icon"></div>
-                    <div class="bg-yellow-400  w-4 h-4 rounded-full hidden" id="status-degraded-icon"></div>
-                    <div class="bg-red-600 w-4 h-4 rounded-full hidden" id="status-down-icon"></div>
-                    <p class="hidden" id="status-up-text">All Systems Operational.</p>
-                    <p class="hidden" id="status-degraded-text">Degraded Services.</p>
-                    <p class="hidden" id="status-down-text">All Systems Down.</p>
+                    <div class="bg-green-500 dark:bg-green-400 w-4 h-4 rounded-full hidden" id="status-up-icon"></div>
+                    <div class="bg-yellow-400 dark:bg-yellow-200 w-4 h-4 rounded-full hidden" id="status-degraded-icon">
+                    </div>
+                    <div class="bg-red-600 dark:bg-red-500 w-4 h-4 rounded-full hidden" id="status-down-icon"></div>
+                    <p class="hidden dark:text-slate-50" id="status-up-text">All Systems Operational.</p>
+                    <p class="hidden dark:text-slate-50" id="status-degraded-text">Degraded Services.</p>
+                    <p class="hidden dark:text-slate-50" id="status-down-text">All Systems Down.</p>
                 </a>
             </div>
             <div class="flex flex-row items-center justify-center gap-6">
@@ -45,9 +46,9 @@
     </header>
 
     <div class="container max-w-[1440px] mt-14 text-center px-4">
-        <h1 class="font-bold text-8xl text-gray-800">Welcome to wah.su!</h1>
+        <h1 class="font-bold text-8xl text-gray-800 dark:text-slate-200">Welcome to wah.su!</h1>
         <!--noformat-->
-        <p class="max-w-[840px] mx-auto mt-6 text-gray-700 text-left whitespace-pre">
+        <p class="max-w-[840px] mx-auto mt-6 text-gray-700 dark:text-slate-300 text-left whitespace-pre">
             Looking for a cozy, reliable den away from tech companies? You've come to the right place!
             wah.su is all about providing a safe and stable environment for your projects.
 
@@ -58,7 +59,7 @@
     </div>
 
     <div class="container max-w-[1440px] mt-14 px-4 py-4">
-        <h1 class="font-bold text-4xl mb-4 text-gray-800">Currently hosting</h1>
+        <h1 class="font-bold text-4xl mb-4 text-gray-800 dark:text-slate-200">Currently hosting</h1>
         <div class="flex flex-row gap-2 flex-wrap" id="services">
         </div>
     </div>
