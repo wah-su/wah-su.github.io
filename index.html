@@ -4,20 +4,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wah.su</title>
+    <title>wah.su - welcome</title>
     <link href="/public/output.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicon/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects.">
+    <meta name="keywords" content="wah.su, radiquum, invite-only, hosting">
+    <meta name="author" content="@radiquum">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://home.wah.su/">
+    <meta name="twitter:title" content="wah.su">
+    <meta name="twitter:description"
+        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects.">
+    <meta name="twitter:image" content="https://home.wah.su/public/preview.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="wah.su" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://home.wah.su/" />
+    <meta property="og:image" content="https://home.wah.su/public/preview.png" />
+    <meta property="og:description"
+        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects." />
 </head>
 
 <body class="light dark:bg-slate-900" id="body">
-    <header class="shadow-lg pt-4 pb-6 sticky top-0 left-0 bg-slate-50 dark:bg-slate-800">
+    <header class="sticky top-0 left-0 pt-4 pb-6 shadow-lg bg-slate-50 dark:bg-slate-800">
         <div class="flex flex-col md:flex-row gap-2 items-center container max-w-[1440px] justify-between px-4">
             <div><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
             <div>
                 <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
-                    <div class="bg-green-500 dark:bg-green-400 w-4 h-4 rounded-full hidden" id="status-up-icon"></div>
-                    <div class="bg-yellow-400 dark:bg-yellow-200 w-4 h-4 rounded-full hidden" id="status-degraded-icon">
+                    <div class="hidden w-4 h-4 bg-green-500 rounded-full dark:bg-green-400" id="status-up-icon"></div>
+                    <div class="hidden w-4 h-4 bg-yellow-400 rounded-full dark:bg-yellow-200" id="status-degraded-icon">
                     </div>
-                    <div class="bg-red-600 dark:bg-red-500 w-4 h-4 rounded-full hidden" id="status-down-icon"></div>
+                    <div class="hidden w-4 h-4 bg-red-600 rounded-full dark:bg-red-500" id="status-down-icon"></div>
                     <p class="hidden dark:text-slate-50" id="status-up-text">All Systems Operational.</p>
                     <p class="hidden dark:text-slate-50" id="status-degraded-text">Degraded Services.</p>
                     <p class="hidden dark:text-slate-50" id="status-down-text">All Systems Down.</p>
@@ -25,12 +52,12 @@
             </div>
             <div class="flex flex-row items-center justify-center gap-6">
                 <label class="inline-flex items-center cursor-pointer">
-                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 mr-4">light</span>
+                    <span class="mr-4 text-sm font-medium text-gray-900 ms-3 dark:text-gray-300">light</span>
                     <input type="checkbox" class="sr-only peer" id="theme-toggle">
                     <div
                         class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
                     </div>
-                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">dark</span>
+                    <span class="text-sm font-medium text-gray-900 ms-3 dark:text-gray-300">dark</span>
                 </label>
                 <a href="https://auth.wah.su"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -46,7 +73,7 @@
     </header>
 
     <div class="container max-w-[1440px] mt-14 text-center px-4">
-        <h1 class="font-bold text-6xl md:text-8xl text-gray-800 dark:text-slate-200">Welcome to wah.su!</h1>
+        <h1 class="text-6xl font-bold text-gray-800 md:text-8xl dark:text-slate-200">Welcome to wah.su!</h1>
         <!--noformat-->
         <p class="max-w-[840px] mx-auto mt-6 text-gray-700 dark:text-slate-300 text-left w-full">
             Looking for a cozy, reliable den away from tech companies? You've come to the right place!
@@ -60,9 +87,9 @@
     </div>
 
     <div class="container max-w-[1440px] mt-14 px-4 py-4">
-        <h1 class="font-bold text-4xl md:ml-0 mb-4 text-gray-800 dark:text-slate-200">Currently
+        <h1 class="mb-4 text-4xl font-bold text-gray-800 md:ml-0 dark:text-slate-200">Currently
             hosting</h1>
-        <div class="flex flex-row gap-2 flex-wrap justify-center md:justify-start" id="services">
+        <div class="flex flex-row flex-wrap justify-center gap-2 md:justify-start" id="services">
         </div>
     </div>
 
