@@ -36,7 +36,7 @@ window.onload = function () {
     const template = `
               <img class="rounded-t-lg object-cover h-[192px] w-full" src="${cards[index].image}" alt="" />
               <div class="p-5">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${cards[index].name}
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">${cards[index].name}
                   </h5>
                   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${cards[index].description}
                   </p>
