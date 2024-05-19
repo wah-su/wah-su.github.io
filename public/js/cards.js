@@ -31,10 +31,14 @@ const cards = [
 ];
 const services = document.getElementById("services");
 
-window.onload = function () {
+function renderCards() {
+  const theme = document.getElementById("body").classList[0];
+  services.innerHTML = "";
   for (let index = 0; index < cards.length; index++) {
+    const image_name = cards[index].image.split(".")[0];
+    const image_ext = cards[index].image.split(".")[1];
     const template = `
-              <img class="rounded-t-lg object-cover h-[192px] w-full" src="${cards[index].image}" alt="" />
+              <img class="rounded-t-lg object-cover h-[192px] w-full" src="${image_name}-${theme}.${image_ext}" alt="" />
               <div class="p-5">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">${cards[index].name}
                   </h5>
@@ -65,4 +69,5 @@ window.onload = function () {
 
     services.appendChild(element);
   }
-};
+}
+window.onload = renderCards();
