@@ -5,6 +5,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{html,js}",
     "./public/js/cards.js",
+    "./public/js/status.js",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {

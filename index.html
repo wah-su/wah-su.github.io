@@ -36,20 +36,17 @@
 </head>
 
 <body class="light dark:bg-slate-900" id="body">
-    <header class="sticky top-0 left-0 pt-4 pb-6 shadow-lg bg-slate-50 dark:bg-slate-800">
+    <header class="top-0 left-0 pt-4 pb-6 shadow-lg bg-slate-50 dark:bg-slate-800">
         <div
             class="flex flex-col md:flex-row gap-2 md:gap-0 items-center container max-w-[1440px] justify-between px-4">
             <div class="self-start"><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
             <div class="self-start md:self-auto">
+                <!--noformat-->
                 <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
-                    <div class="hidden w-4 h-4 bg-green-500 rounded-full dark:bg-green-400" id="status-up-icon"></div>
-                    <div class="hidden w-4 h-4 bg-yellow-400 rounded-full dark:bg-yellow-200" id="status-degraded-icon">
-                    </div>
-                    <div class="hidden w-4 h-4 bg-red-600 rounded-full dark:bg-red-500" id="status-down-icon"></div>
-                    <p class="hidden dark:text-slate-50" id="status-up-text">All Systems Operational.</p>
-                    <p class="hidden dark:text-slate-50" id="status-degraded-text">Degraded Services.</p>
-                    <p class="hidden dark:text-slate-50" id="status-down-text">All Systems Down.</p>
+                    <div class="w-4 h-4 transition ease-in bg-gray-500 rounded-full duration-400" id="status-icon"></div>
+                    <p class="dark:text-slate-50" id="status-text">Fetching Services Status</p>
                 </a>
+                <!--noformat-->
             </div>
             <div class="flex flex-row items-center self-start justify-center gap-6 -ml-4">
                 <label class="inline-flex items-center cursor-pointer">
