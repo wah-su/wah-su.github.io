@@ -37,9 +37,10 @@
 
 <body class="light dark:bg-slate-900" id="body">
     <header class="sticky top-0 left-0 pt-4 pb-6 shadow-lg bg-slate-50 dark:bg-slate-800">
-        <div class="flex flex-col md:flex-row gap-2 items-center container max-w-[1440px] justify-between px-4">
-            <div><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
-            <div>
+        <div
+            class="flex flex-col md:flex-row gap-2 md:gap-0 items-center container max-w-[1440px] justify-between px-4">
+            <div class="self-start"><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
+            <div class="self-start md:self-auto">
                 <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
                     <div class="hidden w-4 h-4 bg-green-500 rounded-full dark:bg-green-400" id="status-up-icon"></div>
                     <div class="hidden w-4 h-4 bg-yellow-400 rounded-full dark:bg-yellow-200" id="status-degraded-icon">
@@ -50,7 +51,7 @@
                     <p class="hidden dark:text-slate-50" id="status-down-text">All Systems Down.</p>
                 </a>
             </div>
-            <div class="flex flex-row items-center justify-center gap-6">
+            <div class="flex flex-row items-center self-start justify-center gap-6 -ml-4">
                 <label class="inline-flex items-center cursor-pointer">
                     <span class="mr-4 text-sm font-medium text-gray-900 ms-3 dark:text-gray-300"><svg
                             class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
