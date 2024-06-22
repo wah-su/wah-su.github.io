@@ -5,6 +5,7 @@ const cards = [
     description: "Unofficial Bitwarden compatible server.",
     about: "https://github.com/dani-garcia/vaultwarden",
     url: "https://vault.wah.su",
+    hasDarkMode: true,
   },
   {
     image: "/public/images/nextcloud.png",
@@ -13,6 +14,7 @@ const cards = [
       "productivity suite, offering file sharing and collaboration tools.",
     about: "https://nextcloud.com/",
     url: "https://cloud.wah.su",
+    hasDarkMode: false,
   },
   {
     image: "/public/images/immich.png",
@@ -20,6 +22,7 @@ const cards = [
     description: "platform for managing and browsing your photos.",
     about: "https://immich.app",
     url: "https://photos.wah.su",
+    hasDarkMode: false,
   },
   {
     image: "/public/images/zipline.png",
@@ -27,6 +30,7 @@ const cards = [
     description: "image uploading with ShareX compatibility.",
     about: "https://zipline.diced.sh/",
     url: "https://x.wah.su",
+    hasDarkMode: false,
   },
 ];
 const services = document.getElementById("services");
@@ -37,8 +41,13 @@ function renderCards() {
   for (let index = 0; index < cards.length; index++) {
     const image_name = cards[index].image.split(".")[0];
     const image_ext = cards[index].image.split(".")[1];
+
+    const image_url = `${image_name}${
+      cards[index].hasDarkMode ? `-${theme}` : ""
+    }.${image_ext}`;
+
     const template = `
-              <img class="rounded-t-lg object-cover h-[192px] w-full" src="${image_name}-${theme}.${image_ext}" alt="" />
+              <img class="rounded-t-lg object-cover h-[192px] w-full" src="${image_url}" alt="" />
               <div class="p-5">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">${cards[index].name}
                   </h5>
