@@ -25,6 +25,14 @@ const cards = [
     hasDarkMode: false,
   },
   {
+    image: "/public/images/element.svg",
+    name: "Matrix",
+    description: "An open network for secure, decentralised communication.",
+    about: "https://matrix.org",
+    url: "https://chat.wah.su",
+    hasDarkMode: false,
+  },
+  {
     image: "/public/images/zipline.png",
     name: "Zipline",
     description: "image uploading with ShareX compatibility.",
