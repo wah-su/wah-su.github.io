@@ -3,6 +3,7 @@ module.exports = {
   darkMode: "selector",
   content: [
     "./index.html",
+    "./privacy.html",
     "./src/**/*.{html,js}",
     "./public/js/cards.js",
     "./public/js/status.js",
