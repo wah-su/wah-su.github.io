@@ -1,19 +1,28 @@
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "selector",
-  content: [
-    "./index.html",
-    "./privacy.html",
-    "./src/**/*.{html,js}",
-    "./public/js/cards.js",
-    "./public/js/status.js",
-    "./node_modules/flowbite/**/*.js",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./static/js/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    container: {
-      center: true,
+    extend: {
+      colors: {
+        "page-background": "#210905",
+        "header-background": "#85144B",
+        "card-background": "#823220",
+        "button-background": "#E64824",
+      },
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
+      screens: {
+        'xl': '1512px',
+        '2xl': '1860px',
+        'fhd': '1920px',
+      },
     },
-    extend: {},
   },
-  plugins: [require("flowbite/plugin")],
-};
+  plugins: [
+    addDynamicIconSelectors(),
+  ],
+}
+
