@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wah.su | Services</title>
-    <link rel="stylesheet" href="./static/tailwind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="bg-[#120D0C] text-white ubuntu-mono-regular">
-    <div class="container w-full p-8 md:p-16">
-      <div
-        class="flex flex-col gap-8 lg:items-center lg:justify-between lg:flex-row"
-      >
-        <div
-          class="flex flex-col gap-4 text-4xl sm:items-center sm:text-6xl sm:flex-row"
-        >
-          <a href="./index.html" class="block"
-            ><img class="w-96" src="static/LOGO.svg" alt="wah.su" id="logo"
-          /></a>
-          <p class="block">/Services</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wah.su | Services</title>
+  <link rel="stylesheet" href="./static/tailwind.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-[#120D0C] text-white ubuntu-mono-regular">
+  <div class="container flex flex-col w-full h-auto gap-8 p-8 md:p-16">
+    <div class="flex flex-col gap-8 pb-8 lg:items-center lg:justify-between lg:flex-row">
+      <div class="flex flex-col gap-4 text-4xl sm:items-center sm:text-6xl sm:flex-row">
+        <a href="./index.html" class="block"><img class="w-96" src="static/LOGO.svg" alt="wah.su" id="logo" /></a>
+        <p class="block">/Services</p>
+      </div>
+      <a href="https://status.wah.su" class="flex flex-row items-center justify-center gap-4" target="_blank">
+        <div class="w-6 h-6 transition ease-in bg-gray-500 rounded-full sm:w-8 sm:h-8 aspect-square duration-400"
+          id="status-icon"></div>
+        <p class="text-xl sm:text-3xl" id="status-text">
+          Fetching Services Status
+        </p>
+      </a>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-4xl font-bold">File Sharing</h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/nextcloud.png" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">NextCloud</p>
+          </div>
+          <p class="text-xl">Productivity suite, offering file sharing and collaboration tools.</p>
         </div>
-        <a
-          href="https://status.wah.su"
-          class="flex flex-row items-center justify-center gap-4"
-          target="_blank"
-        >
-          <div
-            class="w-6 h-6 transition ease-in bg-gray-500 rounded-full sm:w-8 sm:h-8 aspect-square duration-400"
-            id="status-icon"
-          ></div>
-          <p class="text-xl sm:text-3xl" id="status-text">
-            Fetching Services Status
-          </p>
-        </a>
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/zipline.png" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">Zipline</p>
+          </div>
+          <p class="text-xl">Image uploading with ShareX compatibility.</p>
+        </div>
       </div>
     </div>
 
-    <script src="./static/js/checkstatus.js"></script>
-  </body>
+    <div>
+      <h2 class="mb-4 text-4xl font-bold">Media</h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/immich.png" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">Immich</p>
+          </div>
+          <p class="text-xl">Platform for managing and browsing your photos.</p>
+        </div>
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/navidrome.png" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">Navidrome</p>
+          </div>
+          <p class="text-xl">Self-hosted music library and player with subsonic protocol support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-4xl font-bold">Security and Privacy</h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/vaultwarden.png" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">Vaultwarden</p>
+          </div>
+          <p class="text-xl">Unofficial Bitwarden password manager compatible server.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-4xl font-bold">Communication</h2>
+      <div class="flex flex-wrap gap-4">
+        <div class="py-2 max-w-96">
+          <div class="flex items-center gap-4 mb-2">
+            <img alt="" src="./static/logos/element.svg" class="w-16 h-16 rounded-full"/>
+            <p class="text-3xl font-bold">Matrix</p>
+          </div>
+          <p class="text-xl">An open network for secure, decentralised communication.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./static/js/checkstatus.js"></script>
+</body>
+
 </html>
