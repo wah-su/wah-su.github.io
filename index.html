@@ -2,133 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wah.su | Homepage</title>
-    <link href="/public/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./static/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/public/favicon/site.webmanifest">
+    <link rel="preload" href="./static/will-rust-Vv1E0zcQDCI-unsplash.jpg" as="image">
+    <link rel="prefetch" href="./services.html" />
+    <link rel="prefetch" href="./privacy.html" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects.">
+    <meta name="description" content="wah.su project run by https://wah.su/radiquum">
     <meta name="keywords" content="wah.su, radiquum, invite-only, hosting">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://home.wah.su/">
     <meta name="twitter:title" content="wah.su | Homepage">
-    <meta name="twitter:description"
-        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects.">
-    <meta name="twitter:image" content="https://home.wah.su/public/preview.png">
+    <meta name="twitter:description" content="wah.su project run by https://wah.su/radiquum">
+    <meta name="twitter:image" content="https://home.wah.su/static/og/index.png">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="wah.su | Homepage" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://home.wah.su/" />
-    <meta property="og:image" content="https://home.wah.su/public/preview.png" />
-    <meta property="og:description"
-        content="Looking for a cozy, reliable den away from tech companies? wah.su is all about providing a safe and stable environment for your projects." />
+    <meta property="og:image" content="https://home.wah.su/static/og/index.png" />
+    <meta property="og:description" content="wah.su project run by https://wah.su/radiquum" />
 </head>
 
-<body class="light dark:bg-slate-900" id="body">
-    <header class="top-0 left-0 pt-4 pb-6 shadow-lg bg-slate-50 dark:bg-slate-800">
-        <div
-            class="flex flex-col md:flex-row gap-2 md:gap-0 items-center container max-w-[1440px] justify-between px-4">
-            <div class="self-start"><img src="/public/images/logo-light.svg" alt="wah.su" id="logo" /></div>
-            <div class="self-start md:self-auto">
-                <!--noformat-->
-                <a href="https://status.wah.su" class="flex flex-row items-center gap-2" target="_blank">
-                    <div class="w-4 h-4 transition ease-in bg-gray-500 rounded-full duration-400" id="status-icon"></div>
-                    <p class="dark:text-slate-50" id="status-text">Fetching Services Status</p>
-                </a>
-                <!--noformat-->
-            </div>
-            <div class="flex flex-row items-center self-start justify-center gap-6 -ml-4">
-                <label class="inline-flex items-center cursor-pointer">
-                    <span class="mr-4 text-sm font-medium text-gray-900 ms-3 dark:text-gray-300"><svg
-                            class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                    <input type="checkbox" class="sr-only peer" id="theme-toggle">
-                    <div
-                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                    </div>
-                    <span class="text-sm font-medium text-gray-900 ms-3 dark:text-gray-300"><svg
-                            class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                </label>
-                <a href="https://auth.wah.su"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd"
-                            d="M4.857 3A1.857 1.857 0 0 0 3 4.857v4.286C3 10.169 3.831 11 4.857 11h4.286A1.857 1.857 0 0 0 11 9.143V4.857A1.857 1.857 0 0 0 9.143 3H4.857Zm10 0A1.857 1.857 0 0 0 13 4.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 9.143V4.857A1.857 1.857 0 0 0 19.143 3h-4.286Zm-10 10A1.857 1.857 0 0 0 3 14.857v4.286C3 20.169 3.831 21 4.857 21h4.286A1.857 1.857 0 0 0 11 19.143v-4.286A1.857 1.857 0 0 0 9.143 13H4.857Zm10 0A1.857 1.857 0 0 0 13 14.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 19.143v-4.286A1.857 1.857 0 0 0 19.143 13h-4.286Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <p class="ml-2">Dashboard</p>
-                </a>
-            </div>
+<body class="bg-[#120D0C] text-white ubuntu-mono-regular">
+    <div class="container flex flex-col justify-between w-full h-[100dvh] p-8 md:p-16">
+        <img class="absolute inset-0 object-cover w-full h-full blur-sm -z-10" src="./static/will-rust-Vv1E0zcQDCI-unsplash.jpg" alt=""/>
+        <div class="flex flex-col gap-8 lg:items-center lg:justify-between lg:flex-row">
+            <img class="w-96" src="./static/LOGO.svg" alt="wah.su" id="logo" />
+            <a href="https://status.wah.su" class="flex flex-row items-center justify-center gap-4" target="_blank">
+                <div class="w-6 h-6 transition ease-in bg-gray-500 rounded-full sm:w-8 sm:h-8 aspect-square duration-400" id="status-icon"></div>
+                <p class="text-xl sm:text-3xl" id="status-text">Fetching Services Status</p>
+            </a>
         </div>
-    </header>
-
-    <div class="container max-w-[1440px] mt-14 text-center px-4">
-        <h1 class="text-6xl font-bold text-gray-800 md:text-8xl dark:text-slate-200">Welcome to wah.su!</h1>
-        <!--noformat-->
-        <p class="max-w-[840px] mx-auto mt-6 text-gray-700 dark:text-slate-300 text-left w-full">
-            Looking for a cozy, reliable den away from tech companies? You've come to the right place!
-            wah.su is all about providing a safe and stable environment for your projects.
-        </p>
-        <p class="max-w-[840px] mx-auto mt-6 text-gray-700 dark:text-slate-300 text-left w-full">
-            Run by yours truly, <a href="https://wah.su/radiquum" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">@radiquum</a>, we believe in quality over quantity, which is why access is currently invite-only.
-            Interested in joining the pack? Reach out to me to sniff out an invitation.
-        </p>
-        <!--noformat-->
-    </div>
-
-    <div class="container max-w-[1440px] mt-16 px-4">
-        <div class="bg-white rounded-lg shadow dark:bg-gray-800">
-            <div class="w-full max-w-screen-xl p-4 mb-4">
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-slate-200">Proudly Hosting</h1>
+        <div class="flex flex-col-reverse gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <div class="text-lg sm:text-2xl">
+                <p>Run by <a class="underline hover:text-[#ff851b] transition-colors" href="https://wah.su/radiquum">@radiquum</a></p>
+                <p>Photo by <a class="underline hover:text-[#ff851b] transition-colors" href="https://unsplash.com/@willrust">Will Rust</a> on <a class="underline hover:text-[#ff851b] transition-colors" href="https://unsplash.com/">Unsplash</a></p>
             </div>
-        </div>
-        <div class="flex flex-row flex-wrap justify-center gap-2 md:justify-start" id="services">
+            <div class="text-2xl lg:text-right">
+                <p><a class="underline hover:text-[#ff851b] transition-colors" href="https://github.com/wah-su">Github</a></p>
+                <!-- <p><a class="underline hover:text-[#ff851b] transition-colors" href="https://wah.su">Discord</a></p> -->
+                <p><a class="underline hover:text-[#ff851b] transition-colors" href="./services.html">View Services</a></p>
+                <p><a class="underline hover:text-[#ff851b] transition-colors" href="./privacy.html">Privacy Policy</a></p>
+            </div>
         </div>
     </div>
 
-    <footer class="m-4 bg-white rounded-lg shadow dark:bg-gray-800">
-        <div class="w-full max-w-screen-xl p-4 mx-auto md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 wah.su | All Rights Reserved.
-            </span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-                <li>
-                    <a href="/privacy.html" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="https://wah.su/radiquum" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="/public/js/theme.js"></script>
-    <script src="/public/js/flowbite.min.js"></script>
-    <script src="/public/js/cards.js"></script>
-    <script src="/public/js/status.js"></script>
+    <script src="./static/js/checkstatus.js"></script>
 </body>
 
 </html>

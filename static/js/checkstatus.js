@@ -15,7 +15,7 @@ const serviceDown = {
 };
 const serviceUnknown = {
   color: ["bg-gray-500", "dark:bg-gray-400"],
-  text: "Services Status Unknown",
+  text: "Unknown or Failed to fetch",
 };
 
 async function getServicesHealth() {
@@ -33,42 +33,39 @@ async function getServicesHealth() {
         heartbeatDict[key][heartbeatDict[key].length - 1].status
       );
     }
-
-    let status = "up";
     const count = lastHeartbeats.reduce((partialSum, a) => partialSum + a, 0);
 
-    if (count === lastHeartbeats.length) {
-      status = "up";
-    } else if (count === 0) {
-      status = "down";
-    } else {
-      status = "degraded";
-    }
-
-    if (status === "up") {
-      statusIcon.classList.add(...serviceUp.color);
-      statusIcon.classList.remove(
-        ...serviceDegraded.color,
-        ...serviceDown.color,
-        ...serviceUnknown.color
-      );
-      statusText.textContent = serviceUp.text;
-    } else if (status === "degraded") {
-      statusIcon.classList.add(...serviceDegraded.color);
-      statusIcon.classList.remove(
-        ...serviceUp.color,
-        ...serviceDown.color,
-        ...serviceUnknown.color
-      );
-      statusText.textContent = serviceDegraded.text;
-    } else if (status === "down") {
-      statusIcon.classList.add(...serviceDown.color);
-      statusIcon.classList.remove(
-        ...serviceUp.color,
-        ...serviceDegraded.color,
-        ...serviceUnknown.color
-      );
-      statusText.textContent = serviceDown.text;
+    switch (count) {
+      case lastHeartbeats.length: {
+        statusIcon.classList.add(...serviceUp.color);
+        statusIcon.classList.remove(
+          ...serviceDegraded.color,
+          ...serviceDown.color,
+          ...serviceUnknown.color
+        );
+        statusText.textContent = serviceUp.text;
+        break;
+      }
+      case 0: {
+        statusIcon.classList.add(...serviceDown.color);
+        statusIcon.classList.remove(
+          ...serviceUp.color,
+          ...serviceDegraded.color,
+          ...serviceUnknown.color
+        );
+        statusText.textContent = serviceDown.text;
+        break;
+      }
+      default: {
+        statusIcon.classList.add(...serviceDegraded.color);
+        statusIcon.classList.remove(
+          ...serviceUp.color,
+          ...serviceDown.color,
+          ...serviceUnknown.color
+        );
+        statusText.textContent = serviceDegraded.text;
+        break;
+      }
     }
   } catch (error) {
     statusIcon.classList.add(...serviceUnknown.color);
@@ -84,5 +81,4 @@ async function getServicesHealth() {
 }
 
 getServicesHealth();
-
 setInterval(getServicesHealth, 600000);
