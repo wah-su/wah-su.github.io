@@ -10,10 +10,10 @@ export default function Title() {
           non-company, 200% wah!
         </p>
       </div>
-      <div className="grid grid-cols-1 grid-rows-1 flex-shrink-0 sm:flex-shrink-1 py-14 md:py-0">
+      <a href="https://wahs.wah.su" className="hover:-rotate-5 origin-center transition-transform  grid grid-cols-1 grid-rows-1 flex-shrink-0 sm:flex-shrink-1 py-14 md:py-0">
         <img className="col-[1] row-[1] scale-150 max-h-[512px] xl:max-h-none md:scale-100 -z-10" src="/static/images/card-blur.png" alt=""></img>
         <img className="col-[1] row-[1] scale-140  md:scale-95 lg:scale-90 xl:scale-95 xl:mt-2 max-h-[512px] xl:max-h-none" src="/static/images/card.png" alt="Sleeping red panda on the tree"></img>
-      </div>
+      </a>
     </div>
   );
 }
