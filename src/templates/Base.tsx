@@ -17,6 +17,7 @@ export default function Base({ children, isDev }: BaseProps) {
           />
           <title>WAH.su</title>
           {isDev ? <script src="/static/js/hotreload.js"></script> : ""}
+          <script src="/static/js/checkstatus.js"></script>
           <link rel="stylesheet" href="/static/css/tailwind.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
@@ -25,7 +26,7 @@ export default function Base({ children, isDev }: BaseProps) {
             crossOrigin="anonymous"
           ></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Sometype+Mono&family=Ubuntu&family=Ubuntu+Mono&display=swap"
             rel="stylesheet"
           ></link>
         </head>
