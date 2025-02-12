@@ -4,6 +4,7 @@ import fs from "fs";
 import Base from "./templates/Base";
 import Title from "./templates/Title";
 import Bento from "./templates/Bento";
+import NotBento from "./templates/NotBento";
 
 const environment: "prod" | "dev" =
   (process.env.ENVIRONMENT as "prod" | "dev") || "prod";
@@ -19,6 +20,7 @@ const html = renderToString(
   <Base isDev={environment == "dev"}>
     <Title />
     <Bento />
+    <NotBento />
   </Base>
 );
 fs.cpSync("src/static", "out/static", { recursive: true });

@@ -66,9 +66,18 @@ async function getServicesHealth() {
 }
 
 window.onload = () => {
-  statusIcon = document.getElementById("status-icon");
-  statusIconPing = document.getElementById("status-icon-ping");
-  statusText = document.getElementById("status-text");
+  const footer = document.getElementById("footer");
+  const mobileFooter = document.getElementById("mobile-footer");
+
+  if (footer.checkVisibility() == true) {
+    statusIcon = footer.querySelector("#status-icon");
+    statusIconPing = footer.querySelector("#status-icon-ping");
+    statusText = footer.querySelector("#status-text");
+  } else {
+    statusIcon = mobileFooter.querySelector("#status-icon");
+    statusIconPing = mobileFooter.querySelector("#status-icon-ping");
+    statusText = mobileFooter.querySelector("#status-text");
+  }
 
   getServicesHealth();
   setInterval(getServicesHealth, 600000);

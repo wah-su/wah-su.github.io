@@ -1,6 +1,6 @@
 export default function Title() {
   return (
-    <div className="min-h-[438px] flex gap-4 px-8 flex-col-reverse lg:flex-row items-center justify-center">
+    <div className="min-h-[438px] flex gap-8 md:gap-4 px-8 flex-col-reverse lg:flex-row items-center justify-center">
       <div className="flex items-center justify-center gap-4 flex-col w-full max-w-[500px] xl:max-w-[590px]">
         <h1 className="text-[#FF851A] text-[64px] md:text-[128px] ubuntu-mono-regular leading-none">
           WAH.su<span className="text-[32px] md:text-[48px]">(d0)</span>
