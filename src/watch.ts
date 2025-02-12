@@ -10,7 +10,6 @@ import { WebSocketServer } from "ws";
 let triggered = 0;
 const delay = 1000;
 
-let SIGINTCount = 0;
 let WSclients: any[] = [];
 
 const log = new Log();
@@ -40,11 +39,12 @@ function onChange() {
 }
 
 function onExit() {
-  fs.rmdirSync("out", { recursive: true });
+  fs.rmdirSync(path.join(__dirname, "../out"), { recursive: true });
+  log.info("Deleted 'out' folder");
   process.exit(0);
 }
 
-const watcher = chokidar.watch(["./src", "./stickerpacks", "./static"], {
+const watcher = chokidar.watch(["./src", "./static"], {
   ignored: (filePath, stats) => filePath.endsWith("watch.ts"),
   atomic: true,
   awaitWriteFinish: true,
@@ -65,20 +65,8 @@ function startServerWithRebuild() {
   });
 
   process.on("SIGINT", () => {
-    SIGINTCount += 1;
-    if (WSclients.length > 0) {
-      async function _closeWS() {
-        WSclients.forEach(async (ws) => await ws.close());
-      }
-      _closeWS();
-    }
-    if (SIGINTCount == 1) {
-      log.info("Gracefully shutdown and cleanup...");
-      onExit();
-    } else if (SIGINTCount >= 3) {
-      log.info("Received 3+ SIGINT signals. Force exit...");
-      process.exit(0);
-    }
+    log.info("Gracefully shutdown and cleanup...");
+    onExit();
   });
 
   app.use(express.static(folder));
@@ -99,6 +87,9 @@ function startServerWithRebuild() {
         log.info(`File ${path} has been removed, rebuilding...`);
         onChange();
       });
+  });
+  app.on("close", () => {
+    log.info("Server closed");
   });
 }
 
