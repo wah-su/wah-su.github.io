@@ -30,10 +30,10 @@ export default function Base({ children, isDev }: BaseProps) {
             rel="stylesheet"
           ></link>
 
-          <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-          <link rel="manifest" href="./favicon/site.webmanifest" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+          <link rel="manifest" href="/static/favicon/site.webmanifest" />
 
           <meta name="description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
           <meta name="keywords" content="wah.su, radiquum, invite-only, hosting" />
