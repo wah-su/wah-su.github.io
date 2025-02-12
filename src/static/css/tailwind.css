@@ -956,6 +956,13 @@
       }
     }
   }
+  .hover\:text-\[\#FF851A\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #FF851A;
+      }
+    }
+  }
   .sm\:flex-shrink-1 {
     @media (width >= 40rem) {
       flex-shrink: 1;

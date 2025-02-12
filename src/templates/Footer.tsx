@@ -10,7 +10,7 @@ export default function Footer({ className }: FooterProps) {
       <div className="flex items-start flex-col gap-4">
         <a
           href="https://status.wah.su"
-          className="flex flex-row items-center justify-center gap-3"
+          className="flex flex-row items-center justify-center gap-3 hover:text-[#FF851A] transition-colors"
           target="_blank"
         >
           <div
@@ -35,12 +35,26 @@ export default function Footer({ className }: FooterProps) {
               />
             </div>
             <span>Photo by</span>{" "}
-            <a href="https://unsplash.com/@lgtts">Ilse Orsel</a> <span>on</span>{" "}
-            <a href="https://unsplash.com">Unsplash</a>
+            <a
+              href="https://unsplash.com/@lgtts"
+              className="hover:text-[#FF851A] transition-colors"
+            >
+              Ilse Orsel
+            </a>{" "}
+            <span>on</span>{" "}
+            <a
+              href="https://unsplash.com"
+              className="hover:text-[#FF851A] transition-colors"
+            >
+              Unsplash
+            </a>
           </div>
         </div>
         <div className="flex gap-8">
-          <a href="https://wah.su/radiquum" className="flex gap-2">
+          <a
+            href="https://wah.su/radiquum"
+            className="flex gap-2 hover:text-[#FF851A] transition-colors"
+          >
             <div className="h-6 w-6 bg-white rounded-full  overflow-hidden">
               <img
                 src="/static/images/avatar_48.jpg"
@@ -50,7 +64,10 @@ export default function Footer({ className }: FooterProps) {
             </div>
             <p>Run by @Radiquum</p>
           </a>
-          <a href="https://github.com/wah-su" className="flex gap-2">
+          <a
+            href="https://github.com/wah-su"
+            className="flex gap-2 hover:text-[#FF851A] transition-colors"
+          >
             <div className="h-6 w-6 bg-white rounded-full">
               <img
                 src="/static/images/GitHub_Invertocat_Dark.png"
