@@ -6,8 +6,7 @@ export default function Title() {
           WAH.su<span className="text-[32px] md:text-[48px]">(d0)</span>
         </h1>
         <p className="text-white ubuntu-mono-regular text-[24px] md:text-[32px] tracking-tighter md:tracking-normal leading-none">
-          A tech non-company with a whole lot of wah—100% tech, 100%
-          non-company, 200% wah!
+          A tech non-company with a whole lot of wah—100% tech, 200% wah!
         </p>
       </div>
       <a

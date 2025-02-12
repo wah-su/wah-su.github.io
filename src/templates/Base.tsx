@@ -29,6 +29,26 @@ export default function Base({ children, isDev }: BaseProps) {
             href="https://fonts.googleapis.com/css2?family=Sometype+Mono&family=Ubuntu&family=Ubuntu+Mono&display=swap"
             rel="stylesheet"
           ></link>
+
+          <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+          <link rel="manifest" href="./favicon/site.webmanifest" />
+
+          <meta name="description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
+          <meta name="keywords" content="wah.su, radiquum, invite-only, hosting" />
+
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="https://home.wah.su/" />
+          <meta name="twitter:title" content="WAH.su" />
+          <meta name="twitter:description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
+          <meta name="twitter:image" content="https://home.wah.su/static/og/opengraph.png" />
+
+          <meta property="og:title" content="WAH.su" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://home.wah.su/" />
+          <meta property="og:image" content="https://home.wah.su/static/og/opengraph.png" />
+          <meta property="og:description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
         </head>
         <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white py-8 overflow-x-hidden">
           {children}
