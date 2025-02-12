@@ -1,5 +1,15 @@
-# homepage of wah.su
+# wah-su.github.io
 
-This repository contains a home page for a wah.su.
+To install dependencies:
 
-It is made using HTML, JS and Tailwind.
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.2.1. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
