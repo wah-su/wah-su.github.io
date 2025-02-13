@@ -30,28 +30,72 @@ export default function Base({ children, isDev }: BaseProps) {
             rel="stylesheet"
           ></link>
 
-          <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/static/favicon/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/static/favicon/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/static/favicon/favicon-16x16.png"
+          />
           <link rel="manifest" href="/static/favicon/site.webmanifest" />
 
-          <meta name="description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
-          <meta name="keywords" content="wah.su, radiquum, invite-only, hosting" />
+          <meta
+            name="description"
+            content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
+          />
+          <meta
+            name="keywords"
+            content="wah.su, radiquum, invite-only, hosting"
+          />
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="https://home.wah.su/" />
           <meta name="twitter:title" content="WAH.su" />
-          <meta name="twitter:description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
-          <meta name="twitter:image" content="https://home.wah.su/static/og/opengraph.png" />
+          <meta
+            name="twitter:description"
+            content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
+          />
+          <meta
+            name="twitter:image"
+            content="https://home.wah.su/static/og/opengraph.png"
+          />
 
           <meta property="og:title" content="WAH.su" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://home.wah.su/" />
-          <meta property="og:image" content="https://home.wah.su/static/og/opengraph.png" />
-          <meta property="og:description" content="A tech non-company with a whole lot of wah—100% tech, 200% wah!" />
+          <meta
+            property="og:image"
+            content="https://home.wah.su/static/og/opengraph.png"
+          />
+          <meta
+            property="og:description"
+            content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
+          />
         </head>
-        <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white py-8 overflow-x-hidden">
-          {children}
+        <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white overflow-hidden">
+        <div className="background-grid w-full min-h-[140dvh] h-full absolute inset-0 overflow-hidden -z-50"></div>
+          <div id="cursor" className="overflow-hidden -z-50">
+            <div
+              className="background-grid w-[256px] h-[256px] rounded-full absolute overflow-hidden top-0 left-0 -z-50"
+              id="cursor-sec"
+            ></div>
+            <div
+              className="w-0 h-0 absolute overflow-hidden top-0 left-0 -z-50"
+              id="cursor-prim"
+            ></div>
+          </div>
+          <div className="overflow-y-auto max-h-[105%] pb-16 scrollbar-hidden">{children}</div>
+          <script src="/static/js/cursor.js"></script>
         </body>
       </html>
     </>
