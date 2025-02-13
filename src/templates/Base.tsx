@@ -8,7 +8,7 @@ interface BaseProps {
 export default function Base({ children, isDev }: BaseProps) {
   return (
     <>
-      <html lang="en">
+      <html lang="en" className="overflow-x-clip">
         <head>
           <meta charSet="UTF-8" />
           <meta
@@ -58,7 +58,7 @@ export default function Base({ children, isDev }: BaseProps) {
             content="wah.su, radiquum, invite-only, hosting"
           />
 
-          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="https://home.wah.su/" />
           <meta name="twitter:title" content="WAH.su" />
           <meta
@@ -77,13 +77,27 @@ export default function Base({ children, isDev }: BaseProps) {
             property="og:image"
             content="https://home.wah.su/static/og/opengraph.png"
           />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="675" />
+          <meta
+            property="og:description"
+            content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
+          />
+
+          <script
+            defer
+            data-domain="home.wah.su"
+            data-api="https://a.wah.su/api/event"
+            src="https://a.wah.su/js/script.js"
+          ></script>
           <meta
             property="og:description"
             content="A tech non-company with a whole lot of wah—100% tech, 200% wah!"
           />
         </head>
         <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white overflow-hidden">
-        <div className="background-grid w-full min-h-[140dvh] h-full absolute inset-0 overflow-hidden -z-50"></div>
+          <div className="background-grid w-full min-h-[140dvh] h-full absolute inset-0 overflow-hidden -z-50"></div>
           <div id="cursor" className="overflow-hidden -z-50">
             <div
               className="background-grid w-[256px] h-[256px] rounded-full absolute overflow-hidden top-0 left-0 -z-50"
@@ -94,7 +108,9 @@ export default function Base({ children, isDev }: BaseProps) {
               id="cursor-prim"
             ></div>
           </div>
-          <div className="overflow-y-auto max-h-[105%] pb-16 scrollbar-hidden">{children}</div>
+          <div className="overflow-y-auto max-h-[105%] pb-16 scrollbar-hidden">
+            {children}
+          </div>
           <script src="/static/js/cursor.js"></script>
         </body>
       </html>
