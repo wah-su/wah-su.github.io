@@ -43,24 +43,5 @@ if (environment == "dev") {
       log.info(stdout);
     }
   );
-
-  const transpiler = new Bun.Transpiler({
-    loader: "js",
-    target: "browser",
-    minifyWhitespace: true,
-  });
-
-  const files = fs.readdirSync("src/static/js");
-  const minify = files.filter((file) => file.endsWith(".js"));
-
-  minify.forEach((file) => {
-    const ext = file.split(".")[file.split(".").length - 1];
-    const name = file.split(".")[0];
-    const orFile = fs.readFileSync(`src/static/js/${file}`, {
-      encoding: "utf-8",
-    });
-    const minFile = transpiler.transformSync(orFile);
-    fs.writeFileSync(`out/static/js/${name}.${ext}`, minFile);
-  });
 }
 fs.writeFileSync("out/index.html", `<!DOCTYPE html />${html}`);

@@ -8,7 +8,7 @@ interface BaseProps {
 export default function Base({ children, isDev }: BaseProps) {
   return (
     <>
-      <html lang="en" className="overflow-x-clip">
+      <html lang="en" className="overflow-hidden">
         <head>
           <meta charSet="UTF-8" />
           <meta
