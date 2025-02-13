@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function Bento() {
   return (
-    <div className="hidden lg:grid px-8 mt-8 lg:mt-16 xl:mt-0 w-full grid-cols-[repeat(4,minmax(0,280px))] grid-rows-[repeat(4,minmax(0,136px))] gap-2">
+    <div className="hidden lg:grid px-8 mt-8 lg:mt-16 xl:mt-0 w-full grid-cols-[repeat(4,minmax(0,280px))] grid-rows-[repeat(4,minmax(0,160px))] gap-2">
       <BentoCard
         logo="/static/images/logos/xbb.png"
         image="/static/images/cards/xbb.png"

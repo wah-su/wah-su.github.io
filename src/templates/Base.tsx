@@ -8,7 +8,7 @@ interface BaseProps {
 export default function Base({ children, isDev }: BaseProps) {
   return (
     <>
-      <html lang="en" className="overflow-hidden">
+      <html lang="en" className="overflow-clip">
         <head>
           <meta charSet="UTF-8" />
           <meta
@@ -97,8 +97,8 @@ export default function Base({ children, isDev }: BaseProps) {
           />
         </head>
         <body className="bg-[#1A0F05] container mx-auto max-w-[1210px] text-white overflow-hidden">
-          <div className="background-grid w-full min-h-[140dvh] h-full absolute inset-0 overflow-hidden -z-50"></div>
-          <div id="cursor" className="overflow-hidden -z-50">
+          <div className="background-grid w-full h-screen absolute inset-0 overflow-hidden -z-50"></div>
+          <div id="cursor" className="overflow-hidden -z-50 hidden md:block">
             <div
               className="background-grid w-[256px] h-[256px] rounded-full absolute overflow-hidden top-0 left-0 -z-50"
               id="cursor-sec"
@@ -108,7 +108,7 @@ export default function Base({ children, isDev }: BaseProps) {
               id="cursor-prim"
             ></div>
           </div>
-          <div className="overflow-y-auto max-h-[105%] pb-16 scrollbar-hidden">
+          <div className="overflow-y-auto overflow-x-clip h-[100dvh] mb-32 pb-8 scrollbar-hidden">
             {children}
           </div>
           <script src="/static/js/cursor.js"></script>
