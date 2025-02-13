@@ -24,7 +24,7 @@ export default function BentoCardNormal({
               alt=""
             />
             <div
-              className="absolute inset-0 bg-gradient-to-r from-[var(--color)/0] to-[var(--color)] to-[75%] "
+              className="absolute inset-0 bg-gradient-to-r from-[rgba(var(--color),.5)] to-[rgb(var(--color))] to-[75%] "
               style={{ "--color": color } as React.CSSProperties}
             ></div>
           </>
@@ -56,7 +56,7 @@ export default function BentoCardNormal({
             alt=""
           />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-[var(--color)/0] to-[var(--color)] to-[75%] "
+            className="absolute inset-0 bg-gradient-to-r from-[rgba(var(--color),.5)] to-[rgb(var(--color))] to-[75%] "
             style={{ "--color": color } as React.CSSProperties}
           ></div>
         </>

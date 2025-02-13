@@ -8,7 +8,7 @@ export default function Bento() {
         logo="/static/images/logos/xbb.png"
         image="/static/images/cards/xbb.png"
         title="XBackBone"
-        color="#111827"
+        color="17,24,39"
         description="Image uploading with ShareX compatibility."
         className="row-[1]"
         link="https://file.wah.su"
@@ -17,7 +17,7 @@ export default function Bento() {
         logo="/static/images/logos/matrix.png"
         image="/static/images/cards/matrix.png"
         title="Matrix"
-        color="#111827"
+        color="17,24,39"
         description="An open network for secure, decentralised communication."
         className="row-[1]"
         link="https://chat.wah.su"
@@ -27,7 +27,7 @@ export default function Bento() {
         logo="/static/images/logos/nextcloud.png"
         image="/static/images/cards/nextcloud.png"
         title="NextCloud"
-        color="#fff"
+        color="255,255,255"
         description="Privacy-Friendly, productivity suite, offering file sharing and collaboration tools."
         className="row-start-1 text-black"
         link="https://cloud.wah.su"
@@ -37,7 +37,7 @@ export default function Bento() {
         logo="/static/images/logos/vaultwarden.png"
         image="/static/images/cards/vaultwarden.png"
         title="Vaultwarden"
-        color="#fff"
+        color="255,255,255"
         description="Unofficial Bitwarden password manager compatible server."
         className="row-start-2 text-black"
         link="https://vault.wah.su"
@@ -47,7 +47,7 @@ export default function Bento() {
         logo="/static/images/logos/immich.png"
         image="/static/images/cards/immich.png"
         title="Immich"
-        color="#000"
+        color="0,0,0"
         description="Platform for managing and browsing your photos. Privacy-Friendly Google Photos alternative."
         className="row-start-2"
         link="https://photos.wah.su"
@@ -56,12 +56,21 @@ export default function Bento() {
         logo="/static/images/logos/linkwarden.png"
         image="/static/images/cards/linkwarden.png"
         title="Linkwarden"
-        color="#111827"
+        color="17,24,39"
         description="Bookmark manager to collect, organize, and preserve webpages."
         className="row-[4]"
         link="https://links.wah.su"
       />
-      <Footer className="col-span-full col-start-2" id="footer" />
+      <BentoCard
+        logo="/static/images/logos/forgejo.png"
+        image="/static/images/cards/forgejo.png"
+        title="Forgejo"
+        color="17,24,39"
+        description="Federated Git Hosting made easy."
+        className="row-[4]"
+        link="https://git.wah.su"
+      />
+      <Footer className="col-span-full col-start-3" id="footer" />
     </div>
   );
 }
